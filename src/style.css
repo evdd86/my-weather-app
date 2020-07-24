@@ -1,3 +1,150 @@
+body {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
 h1 {
-  color: blue;
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  color: rgb(95, 95, 95);
+}
+
+#description {
+  text-transform: capitalize;
+}
+.input-group {
+  padding: 10px;
+}
+h2 {
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(95, 95, 95);
+  font-weight: bold;
+}
+h2.date-today {
+  margin: 15px 0 30px 0;
+  font-size: 30px;
+}
+h2.date-next {
+  margin: 15px 0;
+}
+h2.card-title {
+  margin: 0;
+  color: rgb(95, 95, 95);
+}
+
+h2.flip-card-title {
+  margin: 0;
+  text-align: center;
+  color: rgb(69, 147, 173);
+}
+h3 {
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+}
+
+.WeatherApp {
+  max-width: max-content;
+  margin: 15px auto;
+  border: 1px solid #3308679d;
+  border-radius: 20px;
+}
+
+.card {
+  width: 320px;
+  height: 330px;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+.card-text {
+  font-family: "Happy Monkey", cursive;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 1.75;
+  color: rgba(95, 95, 95, 0.8);
+  text-align: center;
+}
+
+#button-temperature-today-celcius {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+#button-temperature-today-fahrenheit {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+#temperature-today {
+  font-size: 80px;
+  color: rgb(69, 147, 173);
+  margin: 0;
+}
+.bartender {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.SearchCity {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fa-sun {
+  font-size: 80px;
+  color: rgb(69, 147, 173);
+}
+.flip-card {
+  background-color: transparent;
+  width: 110px;
+  height: 100px;
+  perspective: 1000px;
+  margin: 5px;
+}
+
+.flipcard .card-text {
+  font-size: 5px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  color: black;
+}
+
+.flip-card-back {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: white;
+  transform: rotateY(180deg);
 }
